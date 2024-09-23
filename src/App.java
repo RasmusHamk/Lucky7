@@ -25,8 +25,8 @@ public class App {
         System.out.println("Number1: " + num1);
         System.out.println("Number2: " + num2);
         System.out.println("Number3: " + num3);
-    }
-    if (num1 == 7 && num2 == 7 && num3 == 7)
+
+        if (num1 == 7 && num2 == 7 && num3 == 7)
         {
             money = money+50;
             System.out.println("You won 50 $.");
@@ -64,9 +64,31 @@ public class App {
             System.out.println("You now have " + money + " dollars left");
             }
 
-        }
-    }
-}
-
-    
         
+        if (money > 0)
+        {
+            System.out.println("\nDo you want to play again? " + ("yes / no"));
+            String playAgain = in.nextLine();
+            
+            if (playAgain.equalsIgnoreCase("no"))
+            {
+                System.out.println("Thank you for playing :)");
+                break;
+            }
+        }
+
+
+        if (money == 0)
+        {
+            System.out.println("You are out of money. Game over.");
+        }
+
+
+        }
+
+        
+    }
+    in.close();
+    }
+    
+}
