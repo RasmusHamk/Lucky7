@@ -26,7 +26,46 @@ public class App {
         System.out.println("Number2: " + num2);
         System.out.println("Number3: " + num3);
     }
-}
+    if (num1 == 7 && num2 == 7 && num3 == 7)
+        {
+            money = money+50;
+            System.out.println("You won 50 $.");
+            System.out.println("You now have " + money + " dollars.");
+        }
+        else if (num1 == 7 && num2 == 7)
+        {
+            money = money+5;
+            System.out.println("You won 5 $");
+            System.out.println("You now have " + money + " dollars.");
+        }
+        else if (num2 == 7 && num3 == 7)
+            {
+            money = money+5;
+            System.out.println("You won 5 $");
+            System.out.println("You now have " + money + " dollars.");
+            }
+        else if (num1 == 7 && num3 == 7)
+            {
+            money = money+5;
+            System.out.println("You won 5 $");
+            System.out.println("You now have " + money + " dollars.");
+            }
+        else if (num1 == 7 || num2 == 7 || num3 == 7)
+            {
+            money = money+1;
+            System.out.println("You won 1 $");
+            System.out.println("You now have " + money + " dollars.");
+            }
+        {
+        
+            if (num1 != 7 && num2 != 7 && num3 != 7)
+            {
+            System.out.println("You lost.");
+            System.out.println("You now have " + money + " dollars left");
+            }
+
+        }
+    }
 }
 
     
